@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Dwight Schrute's Bidding Blunder</title>
+    
+    <!-- the MAIN.CSS file is linked here -->
+    <link rel="stylesheet" href="guessing-game.css">
+    
+  
+  </head>
+
+  <body>
+
+    <body class='bg' background="dwight_schrute.jpg"></body>
+
+    
+    <h1 align="center">Dwight Schrute's Bidding Blunder</h1>
+
+    <div class="youTubeLink">
+      <a href="https://www.youtube.com/watch?v=Vhsng72lC4s">The Office Episode: Bidding Blunder</a>
+    </div> 
+
+    <div>
+      <p id="p1">BEFORE I GUESS</p>
+      <p id="p2">ANYTHING</p>
+      <p id="p3">I ASK MYSELF</p>
+      <p id="p4">"WOULD AN IDIOT DO THAT?"</p>
+      <p id="p5">AND IF THE ANSWER IS YES</p>
+      <p id="p6">I DO NOT GUESS THAT</p>
+      <br>
+      <p id="p7">-Dwight Schrute</p>
+    </div>
+    
+    <div id="game-box" class="center">
+      <h2 id="PG">Previous Guesses</h2>
+      
+      <ul id="guess-list">
+        <li class="guess">Guess #1   |  ?  |</li>
+        <li class="guess">Guess #2   |  ?  |</li>
+        <li class="guess">Guess #3   |  ?  |</li>
+        <li class="guess">Guess #4   |  ?  |</li>
+        <li class="guess">Guess #5   |  ?  |</li>
+      </ul>
+    </div>
+
+    <br>
+    <div>
+      <input placeholder="enter">
+      <button id="submitBtn">Submit</button>
+      <button id="resetBtn">Reset</button>
+      <button id="hintBtn">Hint</button>
+    </div>
+
+
+    <figure>  
+      <img src="thought_bubble.png" class="bubble" alt="Guess"/>
+      <figcaption>You Have Five <br>Guesses! <br> Answer between <br>1 and 100</figcaption>
+    </figure> 
+   
+    <div id='messages'><h2></h2></div>
+    
+
+    <!-- uncomment the script tag above when you are ready to add JavaScript to your document -->
+    <script src='js/guessing-game.js'></script>
+    
+  </body>
+
+</html>
