@@ -169,7 +169,7 @@ function makeGuess () {
     document.querySelector('input').value = '';
 
     // set game messages produced by checkGuess method 
-    document.querySelector('#messages > h2').innerHTML = guessMessage;
+    document.querySelector('#messages>h2').innerHTML = guessMessage;
     document.querySelector(`#guess-list li:nth-child(${game.pastGuesses.length})`).innerHTML = game.playersGuess;
     
     // RESET & HINT
@@ -181,8 +181,8 @@ function makeGuess () {
     resetButton.addEventListener('click', function() {
       console.log('Reset Everything')
       
-      // error: Uncaught TypeError: Cannot set property 'innerHTML' of null at HTMLButtonElement.<anonymous>
-      document.querySelector('messages>h2').innerHTML = 'Game Over!';
+      
+      document.querySelector('#messages>h2').innerHTML = 'Game Over!';
       game = newGame();
     });
 
@@ -194,7 +194,8 @@ function makeGuess () {
       console.log('Give Hint')
 
     // display hint where messages normally show 
-    document.querySelector('messages>h2').innerHTML = `correct value is in: ${provideHint()}`
+    document.querySelector('#messages>h2').innerHTML = `correct value is in: ${(new Game).provideHint()}`
+    
     });
     
     
